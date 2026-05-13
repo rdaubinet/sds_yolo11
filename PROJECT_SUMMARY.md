@@ -40,10 +40,31 @@ sds_yolo11/
 ├── requirements.txt               # Python dependencies
 ├── setup_project.py              # Setup automation script
 ├── train.py                      # Training script
-├── seadrones_data.yaml           # Dataset config template
+├── verify_dataset.py             # Dataset verification script
+├── seadrones_data.yaml           # SeaDrones dataset config template
+├── surf_swimming_data.yaml       # Surf Swimming dataset config (ACTIVE)
+├── roboflow_data.yaml            # Roboflow dataset template
+├── download_roboflow.py          # Roboflow download helper
 ├── QUICKSTART.md                 # Quick start guide
+├── SURF_TRAINING_GUIDE.md        # Surf Swimming training guide
+├── ROBOFLOW_GUIDE.md             # Roboflow integration guide
 └── README.md                     # Original documentation
 ```
+
+## 📊 Current Dataset: Surf Swimming Detection
+
+**✅ Dataset Configured and Ready!**
+
+- **Location:** `C:\AUS\0 - Repositories\AI Surf Monitoring\Training Data Yolo`
+- **Classes:** 1 (person - surf swimmers)
+- **Training Images:** 9,774
+- **Validation Images:** 827
+- **Test Images:** 65
+- **Total:** 10,666 images
+- **Format:** YOLO v11 (Roboflow export)
+- **License:** CC BY 4.0
+
+See **SURF_TRAINING_GUIDE.md** for detailed training instructions.
 
 ## 🚀 Quick Start Commands
 
@@ -57,21 +78,26 @@ python -c "import ultralytics; print('YOLO11:', ultralytics.__version__)"
 python -c "from ultralytics.nn.modules import space_to_depth, CARAFE; print('✅ Modules OK')"
 ```
 
-### 3. Training Examples
+### 3. Verify Dataset
+```bash
+python verify_dataset.py
+```
+
+### 4. Training Examples
+
+**Quick test (10 epochs - recommended first):**
+```bash
+python train.py --config "cfgs/SOTA Comparison/ours.yaml" --data surf_swimming_data.yaml --epochs 10 --batch 4 --device 0
+```
 
 **Train with proposed enhanced model:**
 ```bash
-python train.py --config "cfgs/SOTA Comparison/ours.yaml" --data seadrones_data.yaml --epochs 100
+python train.py --config "cfgs/SOTA Comparison/ours.yaml" --data surf_swimming_data.yaml --epochs 100 --batch 8 --device 0
 ```
 
 **Train with baseline YOLO11:**
 ```bash
-python train.py --config "cfgs/Ablation Study/yolo11.yaml" --data seadrones_data.yaml --epochs 100
-```
-
-**Quick test with fewer epochs:**
-```bash
-python train.py --config "cfgs/SOTA Comparison/ours.yaml" --data seadrones_data.yaml --epochs 10 --batch 8
+python train.py --config "cfgs/Ablation Study/yolo11.yaml" --data surf_swimming_data.yaml --epochs 100 --batch 8 --device 0
 ```
 
 ### 4. Using YOLO CLI Directly

@@ -1,0 +1,32 @@
+# Surf Swimming Detection Dataset Configuration for YOLO11
+# Dataset: Roboflow "Surf Swimming" dataset
+# Source: https://universe.roboflow.com/renes-workspace-bchun/surf-swimming-ruayv/dataset/1
+# License: CC BY 4.0
+
+# Dataset root directory - absolute path to Training Data Yolo folder
+path: C:\AUS\0 - Repositories\AI Surf Monitoring\Training Data Yolo
+
+# Train/Val/Test splits (relative to 'path')
+train: train/images
+val: valid/images
+test: test/images
+
+# Number of classes
+nc: 1
+
+# Class names
+names:
+  0: person
+
+# Dataset Statistics
+# Train: 9,774 images
+# Valid: 827 images
+# Test: 65 images
+# Total: 10,666 images
+
+# Roboflow Information
+# Workspace: renes-workspace-bchun
+# Project: surf-swimming-ruayv
+# Version: 1
+# License: CC BY 4.0
+# URL: https://universe.roboflow.com/renes-workspace-bchun/surf-swimming-ruayv/dataset/1
