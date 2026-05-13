@@ -1,0 +1,36 @@
+# SeaDronesSee Dataset Configuration for YOLO11
+# This is a template - adjust paths according to your dataset location
+
+# Dataset root directory
+path: ./datasets/seadrones  # Change this to your actual dataset path
+
+# Train/Val/Test splits (relative to 'path')
+train: images/train  
+val: images/val
+test: images/test  # optional
+
+# Number of classes
+nc: 5
+
+# Class names (adjust based on actual dataset classes)
+names:
+  0: swimmer
+  1: boat
+  2: jetski
+  3: life_saving_appliances
+  4: buoy
+
+# Optional: Add data augmentation parameters
+# These can be overridden in the training command
+# hsv_h: 0.015  # Image HSV-Hue augmentation
+# hsv_s: 0.7    # Image HSV-Saturation augmentation
+# hsv_v: 0.4    # Image HSV-Value augmentation
+# degrees: 0.0  # Image rotation (+/- deg)
+# translate: 0.1  # Image translation (+/- fraction)
+# scale: 0.5    # Image scale (+/- gain)
+# shear: 0.0    # Image shear (+/- deg)
+# perspective: 0.0  # Image perspective (+/- fraction)
+# flipud: 0.0   # Image flip up-down (probability)
+# fliplr: 0.5   # Image flip left-right (probability)
+# mosaic: 1.0   # Image mosaic (probability)
+# mixup: 0.0    # Image mixup (probability)
