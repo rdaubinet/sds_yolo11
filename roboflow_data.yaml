@@ -1,0 +1,57 @@
+# Roboflow Dataset Configuration for YOLO11
+# This template is for datasets exported from Roboflow
+# Roboflow typically provides a data.yaml file - you can use that directly or modify this template
+
+# Dataset root directory (path where Roboflow extracted the dataset)
+# Update this to match your Roboflow download location
+path: ./datasets/roboflow_dataset  # Change to your actual path
+
+# Train/Val/Test splits (Roboflow typically uses these paths)
+train: train/images  
+val: valid/images
+test: test/images  # optional, if you included a test set
+
+# Number of classes (update based on your Roboflow project)
+nc: 1  # Change this to your number of classes
+
+# Class names (update based on your Roboflow project classes)
+# Example for a single class:
+names:
+  0: object_class_1
+
+# Multi-class example (uncomment and modify):
+# names:
+#   0: person
+#   1: vehicle
+#   2: animal
+
+# Notes:
+# - Roboflow exports include a data.yaml file in the download
+# - You can use that file directly instead of this template
+# - Make sure the 'path' points to the root folder of your Roboflow dataset
+# - Roboflow folder structure is typically:
+#   roboflow_dataset/
+#   ├── train/
+#   │   ├── images/
+#   │   └── labels/
+#   ├── valid/
+#   │   ├── images/
+#   │   └── labels/
+#   └── test/
+#       ├── images/
+#       └── labels/
+
+# Optional: Data augmentation parameters
+# (These can be overridden in the training command)
+# hsv_h: 0.015  # Image HSV-Hue augmentation
+# hsv_s: 0.7    # Image HSV-Saturation augmentation
+# hsv_v: 0.4    # Image HSV-Value augmentation
+# degrees: 0.0  # Image rotation (+/- deg)
+# translate: 0.1  # Image translation (+/- fraction)
+# scale: 0.5    # Image scale (+/- gain)
+# shear: 0.0    # Image shear (+/- deg)
+# perspective: 0.0  # Image perspective (+/- fraction)
+# flipud: 0.0   # Image flip up-down (probability)
+# fliplr: 0.5   # Image flip left-right (probability)
+# mosaic: 1.0   # Image mosaic (probability)
+# mixup: 0.0    # Image mixup (probability)

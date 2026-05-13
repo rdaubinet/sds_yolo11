@@ -59,12 +59,16 @@ coverage.xml
 .DS_Store
 Thumbs.db
 
-# Model files and datasets (optional - uncomment if needed)
+# Model files and datasets
+# Large model files - uncomment if you want to track them
 # *.pt
 # *.pth
 # *.onnx
-# data/
-# datasets/
+
+# Datasets - typically too large for git
+data/
+datasets/
+*.zip
 
 # Training outputs
 runs/
