@@ -48,18 +48,20 @@ def train_model(
     print(f"   Pretrained:   {pretrained}")
     print("\n" + "=" * 70 + "\n")
     
-    # Load model
-    if Path(pretrained).exists():
-        print(f"Loading pretrained model from {pretrained}")
-        model = YOLO(pretrained)
-    else:
-        print(f"Loading pretrained model: {pretrained}")
-        model = YOLO(pretrained)
+    # Load model with custom architecture
+    print(f"Loading model from config: {config_path}")
+    model = YOLO(config_path)
+    
+    # Load pretrained weights if specified and exists
+    if pretrained and pretrained != config_path:
+        if Path(pretrained).exists():
+            print(f"Loading pretrained weights from: {pretrained}")
+        else:
+            print(f"Loading pretrained weights: {pretrained}")
     
     # Start training
     results = model.train(
         data=data_path,
-        cfg=config_path,
         epochs=epochs,
         batch=batch_size,
         imgsz=imgsz,
