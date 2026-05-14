@@ -55,7 +55,7 @@ sds_yolo11/
 
 **✅ Dataset Configured and Ready!**
 
-- **Location:** `C:\AUS\0 - Repositories\AI Surf Monitoring\Training Data Yolo`
+- **Location:** `C:\AUS\0 - Repositories\SurfLink AI\Training Data Yolo`
 - **Classes:** 1 (person - surf swimmers)
 - **Training Images:** 9,774
 - **Validation Images:** 827
@@ -245,7 +245,7 @@ If you use this project, please cite the original paper:
 
 ---
 
-**Project Location:** `c:\AUS\0 - Repositories\AI Surf Monitoring\sds_yolo11`
+**Project Location:** `c:\AUS\0 - Repositories\SurfLink AI\sds_yolo11`
 
 **Setup Date:** May 11, 2026
 

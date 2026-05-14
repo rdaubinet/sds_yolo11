@@ -17,7 +17,7 @@
 Currently installing **PyTorch 2.5.1 + CUDA 12.1** in the virtual environment:
 
 ```
-Location: C:\AUS\0 - Repositories\AI Surf Monitoring\sds_yolo11\venv_cuda\
+Location: C:\AUS\0 - Repositories\SurfLink AI\sds_yolo11\venv_cuda\
 Python Version: 3.12.2
 PyTorch Version: 2.5.1+cu121 (CUDA 12.1)
 Download Size: 2.4 GB
@@ -32,7 +32,7 @@ Download Size: 2.4 GB
 Every time you want to train with GPU, activate the environment first:
 
 ```powershell
-cd "C:\AUS\0 - Repositories\AI Surf Monitoring\sds_yolo11"
+cd "C:\AUS\0 - Repositories\SurfLink AI\sds_yolo11"
 .\venv_cuda\Scripts\Activate.ps1
 ```
 
@@ -279,7 +279,7 @@ py -3.12 -m venv venv_cuda
 
 ---
 
-**Virtual Environment Location:** `C:\AUS\0 - Repositories\AI Surf Monitoring\sds_yolo11\venv_cuda`
+**Virtual Environment Location:** `C:\AUS\0 - Repositories\SurfLink AI\sds_yolo11\venv_cuda`
 
 **Installation Status:** 🔄 In Progress (downloading PyTorch 2.4 GB)
 

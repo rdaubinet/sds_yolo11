@@ -15,7 +15,7 @@ def verify_dataset():
     print("=" * 70)
     
     # Dataset path
-    base_path = Path(r"C:\AUS\0 - Repositories\AI Surf Monitoring\Training Data Yolo")
+    base_path = Path(r"C:\AUS\0 - Repositories\SurfLink AI\Training Data Yolo")
     
     if not base_path.exists():
         print(f"\n❌ Dataset not found at: {base_path}")

@@ -24,7 +24,7 @@
 
 1. **Activate CUDA Environment:**
    ```powershell
-   cd "C:\AUS\0 - Repositories\AI Surf Monitoring\sds_yolo11"
+   cd "C:\AUS\0 - Repositories\SurfLink AI\sds_yolo11"
    .\venv_cuda\Scripts\Activate.ps1
    ```
 

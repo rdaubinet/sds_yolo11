@@ -54,7 +54,7 @@ Date: May 13, 2026
 
 ### Surf Swimming Detection Dataset
 - **Status:** ✅ Configured and Ready
-- **Location:** `C:\AUS\0 - Repositories\AI Surf Monitoring\Training Data Yolo`
+- **Location:** `C:\AUS\0 - Repositories\SurfLink AI\Training Data Yolo`
 - **Config File:** `surf_swimming_data.yaml`
 - **Training Images:** 9,774
 - **Validation Images:** 827
@@ -94,7 +94,7 @@ sds_yolo11/
 
 ### Quick Test (10 epochs - Recommended First)
 ```powershell
-cd "C:\AUS\0 - Repositories\AI Surf Monitoring\sds_yolo11"
+cd "C:\AUS\0 - Repositories\SurfLink AI\sds_yolo11"
 .\venv_cuda\Scripts\Activate.ps1
 python train.py --config "cfgs/SOTA Comparison/ours.yaml" --data surf_swimming_data.yaml --epochs 10 --batch 4 --device 0
 ```

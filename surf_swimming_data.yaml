@@ -4,7 +4,7 @@
 # License: CC BY 4.0
 
 # Dataset root directory - absolute path to Training Data Yolo folder
-path: C:\AUS\0 - Repositories\AI Surf Monitoring\Training Data Yolo
+path: C:\AUS\0 - Repositories\SurfLink AI\Training Data Yolo
 
 # Train/Val/Test splits (relative to 'path')
 train: train/images
